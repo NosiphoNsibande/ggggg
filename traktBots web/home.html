@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HOME</title>
+<script type="text/javascript" src="jquery/jquery-1.12.4.js"></script>
+<script src="jquery/jqueryStyle.js"></script>
+
+<link rel="stylesheet" type="text/css" href="traktWeb.css">
+<link rel="stylesheet" type="text/css" href="animate.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jquery/viewportchecker.js"></script>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+</head>
+<body>
+<div class="container">
+<div class="div1">
+<div class="banner">
+ <div id="pictureDive">
+ 	<img src="images/logo.png" style="width:100px;height:100px; border-radius: 50%;">
+ </div>
+ <div id="words"><h2><b>TraktBots Movies</b></h2></div>
+
+    <ul>
+    <li><a class="a" href="index.html">Popular</a></li><!--
+    --><li><a class="a" href="aboutus.html">Trending</a></li><!--
+    --><li><a class="a" href="TC.html">Anticipated</a></li><!--
+    --><li><a class="a" href="services.html">Played</a></li>
+    
+</ul>
+
+</div>
+<div id="nosi">
+ <h1><b>Trakt tv Bots</b></h1>
+<div id="innosi">
+ <p>Trakt tv Bots Application intergrate information from trakt API to help you to view popular,trending,anticipated and most played Movies and Tv shows it also allow you search a movie by it title and also by it released date</p>
+ <p>It shows you the search result such as a movie title,year and a picture of a movie,it also direct you to a trailer of a movie or a show</p>
+ <p>This websites is designed to help you with movies and shows also incase you dont understand how to use Trakbot ,becouse bots applications they are new so it may take time for to understand them ,while you learn them you can use this website to see all the movies and shows you can watch....</p>
+ </div>  
+ </div>
+}
+
+<img class="mySlides" src="images/stranger.jpg" style="width:100% ;height:800px;">
+<img class="mySlides" src="images/arrow.jpg" style="width:100% ;
+   height:800px;">
+<img class="mySlides" src="images/super.jpg" style="width:100% ;
+   height:800px;">
+<img class="mySlides" src="images/flash.jpg" style="width:100% ;
+   height:800px;">
+<img class="mySlides" src="images/liers.jpg" style="width:100% ;height:800px;">
+<img class="mySlides" src="images/xm.jpg" style="width:100% ;
+   height:800px;">
+</div>
+
+<div class="show1">
+ <div id=show1Topic><h1><b>POPULAR SHOWS</b></h1></div>
+ <div id="panel">
+
+<img  src="images/stranger.jpg">
+
+<img  src="images/arrow.jpg">
+<img  src="images/super.jpg">
+<img  src="images/flash.jpg"><br><br><br>;
+  
+<img  src="images/liers.jpg">
+
+<img  src="images/xm.jpg">
+<img  src="images/xm.jpg">
+<img  src="images/xm.jpg">
+
+
+ </div>
+<button id="btnPop" style="margin-left:920px;margin-top:280px;width:50px;height:50px ;border-radius:50%"><img style="width:50px;height:50px;border-radius:50%" src="images/next2.jpg"><h4><b>Next</b></h4></button>
+</div>
+
+<div class="show2">
+<div id=show2Topic><h1><b>TRENDING SHOWS</b></h1></div>
+<div id="panel2">
+<img  src="images/stranger.jpg">
+
+<img  src="images/arrow.jpg">
+<img  src="images/super.jpg">
+<img  src="images/flash.jpg"><br><br><br>;
+  
+<img  src="images/liers.jpg">
+
+<img  src="images/game.jpg">
+<img  src="images/game.jpg">
+<img  src="images/game.jpg">  
+
+
+</div>
+<button id="btnPop" style="margin-left:920px;margin-top:280px;width:50px;height:50px ;border-radius:50%"><img style="width:50px;height:50px;border-radius:50%" src="images/next2.jpg"><h4><b>Next</b></h4></button>
+</div>
+
+<div class="show3">
+<div id=show3Topic><h1><b>MOST PLAYED SHOWS</b></h1></div>
+<div id="panel2">
+<img  src="images/stranger.jpg">
+<img  src="images/arrow.jpg">
+<img  src="images/super.jpg">
+<img  src="images/flash.jpg"><br><br><br>;
+
+
+</div>
+<button id="btnPop" style="margin-left:920px;margin-top:40px;width:50px;height:50px ;border-radius:50%"><img style="width:50px;height:50px;border-radius:50%" src="images/next2.jpg"><h4><b>Next</b></h4></button>
+</div>
+
+<div class="show4">
+<div id=show4Topic><h1><b>ANTICIPATED</b></h1></div>
+<div id="panel">
+<img class="ant"  src="images/stranger.jpg">
+<img  class="ant" src="images/arrow.jpg">
+<img class="ant" src="images/super.jpg">
+<img class="ant" src="images/flash.jpg"><br><br><br>;
+
+</div>
+<button id="btnPop" style="margin-left:920px;margin-top:40px;width:50px;height:50px ;border-radius:50%"><img style="width:50px;height:50px;border-radius:50%" src="images/next2.jpg"><h4><b>Next</b></h4></button>
+</div>
+
+
+
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); 
+}
+</script>
+</div>
+</body>
+</html>
